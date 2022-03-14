@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;//1rem = 10px
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background-color: $color-white;
+    color: $color-gray-dark-1;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

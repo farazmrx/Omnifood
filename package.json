@@ -1,14 +1,26 @@
 {
-  "name": "killer-website",
+  "name": "omnifood",
   "version": "1.0.0",
-  "description": "this is my first sass project",
+  "description": "This project is written for the HTML course ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:sass": "node-sass sass/main.scss dist/style.css -w",
+    "compile:sass": "node-sass sass/main.scss dist/style.comp.css",
+    "compress:css": "node-sass dist/style.comp.css dist/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farazmrx/Omnifood.git"
   },
   "author": "faraz vaissi",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farazmrx/Omnifood/issues"
+  },
+  "homepage": "https://github.com/farazmrx/Omnifood#readme",
   "devDependencies": {
-    "node-sass": "^6.0.1"
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5"
   }
 }
