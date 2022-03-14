@@ -1,0 +1,40 @@
+footer{
+    height: 15vh;
+    padding: 50px 30px 30px 30px;
+    background-color: $footer-background;
+    position: relative;    
+
+    .footer-header{
+        display: flex;
+        justify-content: space-between;
+
+        .footer-link a{
+            margin: 0px 10px;
+            color: $footer-text;
+            font-family: 'zen';
+            font-size: 1.2rem;
+        }
+
+        .footer-social a i {
+            color: $footer-text;
+            margin: 0px 10px;
+            font-size: 1.2rem;
+        }
+    }
+
+    .footer-copyright{
+        position: absolute;
+        bottom: 3px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        p{
+            font-size: 1.2rem;
+            color: wheat;
+            font-family: 'zen';
+            font-weight: bold;
+            text-align: center;
+        }
+
+    }
+}

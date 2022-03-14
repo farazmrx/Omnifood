@@ -1,0 +1,61 @@
+.form{
+    height: 100vh;
+    
+    .form-container{
+        margin: auto;
+        width: 700px;
+    }
+
+    .form-container-header h1{
+        @include header-text;
+        font-size: 2.5rem;
+        padding-top: 100px;
+        &:after{
+            @include header-text-after;
+        }
+    }
+
+    .form-group{
+        margin-bottom: 30px;
+
+        .label{
+            font-size: 1.5rem;
+            font-family: 'zen';
+        }
+
+        
+        .input textarea,
+        .input select {
+            width: 100%;
+            padding: 7px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+
+            &::placeholder{
+                font-size: 1.3rem;
+                font-family: 'marckscript';
+            }
+        }
+
+        select{
+            font-size: 1.3rem;
+            font-family: 'marckscript';
+        }
+
+        .name-input{
+            width: 100%;
+            padding: 7px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+
+            &::placeholder{
+                font-size: 1.3rem;
+                font-family: 'marckscript';
+            }
+        }
+    }    
+
+    .form-btn {
+        text-align: center;
+    }
+}

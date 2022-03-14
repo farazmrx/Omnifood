@@ -1,0 +1,43 @@
+.customers{
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)),url(../assets/img/back-customers.jpg);
+    height: 85vh;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+
+    .customers-box-header{
+        @include header-text;
+        padding-top: 90px;
+        color: white;
+        &::after{
+            @include header-text-after;
+        }
+    }
+
+    .customer-box{
+        color: #fff;
+
+        i{
+            font-size: 2rem;
+        }
+
+        p{
+            margin: 30px 0px;
+            font-size: 1.35rem;
+            line-height: 128%;
+        }
+    }
+
+    .customer-profile{
+        display: flex;
+        align-items: center;
+
+        img{
+            border-radius: 100%;
+            width: 55px;
+            height: 55px;
+            margin-right: 8px;
+        }
+    }
+}
