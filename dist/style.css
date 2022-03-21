@@ -26,6 +26,54 @@ ul, li {
 a {
   text-decoration: none; }
 
+.container {
+  display: grid;
+  grid-template-rows: 10rem calc(100vh - 10rem) repeat(8, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+.app {
+  grid-column: full-start / full-end;
+  background-color: green; }
+
+.city {
+  grid-column: full-start / full-end;
+  background-color: greenyellow; }
+
+.comments {
+  grid-column: full-start / full-end;
+  background-color: blue; }
+
+.features {
+  grid-column: full-start / full-end;
+  background-color: orange; }
+
+.gallery {
+  grid-column: full-start / full-end;
+  background-color: orangered; }
+
+.hero {
+  grid-column: full-start / full-end;
+  grid-row: 1 / 3;
+  background-color: aqua; }
+
+.message {
+  grid-column: full-start / full-end;
+  background-color: burlywood; }
+
+.plan {
+  grid-column: full-start / full-end;
+  background-color: brown; }
+
+.footer {
+  grid-column: full-start / full-end;
+  background-color: tomato; }
+
+.header {
+  grid-column: center-start / center-end;
+  grid-row: 1 / 2;
+  background-color: red;
+  z-index: 10; }
+
 /* FONT PATH
  * -------------------------- */
 @font-face {
