@@ -111,20 +111,15 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2rem; }
-  .features__box {
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 2rem; }
-    .features__box--logo {
-      grid-row: 1 / span 2; }
-      .features__box--logo::before {
-        font-size: 3rem;
-        color: #E67E22; }
-    .features__box--header {
-      font-size: 2rem; }
-    .features__box--paragraph {
-      font-size: 1.6rem; }
+  .features__box--logo {
+    grid-row: 1 / span 2; }
+    .features__box--logo::before {
+      font-size: 4rem;
+      color: #E67E22; }
+  .features__box--header {
+    font-size: 2.5rem; }
+  .features__box--paragraph {
+    font-size: 1.6rem; }
 
 .gallery {
   grid-column: full-start / full-end;
