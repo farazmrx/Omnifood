@@ -1,4 +1,48 @@
 .features {
     grid-column: full-start / full-end;
-    background-color: orange;
+    background-color: $color-white;
+    padding: 10rem 0;
+
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+
+    &__paragraph {
+        font-size: 1.6rem;
+    }
+
+    &__header {
+        grid-column: col-start 3/ col-end 10;
+    }
+
+    &__boxes {
+        grid-column: center-start / center-end;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 2rem;
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2rem;
+
+        &--logo {
+            &::before {
+                font-size: 3rem;
+                color: $color-primery;
+            }
+            grid-row: 1 / span 2;
+            // transform: translate(0, -10%);
+        }
+
+        &--header {
+            font-size: 2rem;
+        }
+
+        &--paragraph {
+            font-size: 1.6rem;
+        }
+    }
 }
