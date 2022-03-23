@@ -1,10 +1,12 @@
 .heading {
     &--primery {
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight: 300;
         color: $color-gray-light-1;
         position: relative;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
+        text-align: center;
+        text-transform: uppercase;
 
         &::after {
             content: "";

@@ -1,6 +1,5 @@
 .gallery {
     grid-column: full-start / full-end;
-    background-color: orangered;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
