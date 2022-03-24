@@ -120,7 +120,35 @@ a {
 
 .city {
   grid-column: full-start / full-end;
-  background-color: greenyellow; }
+  background-color: #fff;
+  padding: 10rem 0;
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .city__header {
+    grid-column: full-start / full-end; }
+  .city__boxes {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2rem; }
+  .city__box--img {
+    width: 100%; }
+  .city__box--header {
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 2rem 0; }
+  .city__box--info {
+    font-size: 1.8rem; }
+    .city__box--info h4 {
+      margin-bottom: 1rem; }
+      .city__box--info h4 i {
+        color: #E67E22;
+        margin-right: 1rem; }
+      .city__box--info h4 a {
+        color: #E67E22;
+        border-bottom: 2px solid #E67E22;
+        padding-bottom: .4rem; }
 
 .comments {
   grid-column: full-start / full-end;
