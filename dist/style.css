@@ -47,6 +47,23 @@ a {
     height: 3px;
     width: 10%;
     background-color: #E67E22; }
+  .heading--primery-white {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #fff;
+    position: relative;
+    padding-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase; }
+    .heading--primery-white::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      height: 3px;
+      width: 10%;
+      background-color: #E67E22; }
 
 .u-mb-smaller {
   margin-bottom: 1rem; }
@@ -135,7 +152,7 @@ a {
     width: 100%; }
   .city__box--header {
     font-size: 2.5rem;
-    font-weight: 100;
+    font-weight: 300;
     text-transform: uppercase;
     padding: 2rem 0; }
   .city__box--info {
@@ -152,7 +169,40 @@ a {
 
 .comments {
   grid-column: full-start / full-end;
-  background-color: blue; }
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/back-customers.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 7rem 0;
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .comments__header {
+    grid-column: full-start / full-end; }
+  .comments__boxes {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 3rem;
+    color: #fff; }
+  .comments__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .comments__box--paragraph {
+      font-size: 2rem;
+      font-weight: 100;
+      font-style: italic;
+      margin-bottom: 2rem; }
+    .comments__box--user {
+      display: flex;
+      align-items: center; }
+      .comments__box--user img {
+        border-radius: 100px;
+        width: 5rem;
+        margin-right: 1rem; }
+      .comments__box--user span {
+        font-size: 1.6rem;
+        font-style: italic; }
 
 .features {
   grid-column: full-start / full-end;
