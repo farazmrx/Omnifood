@@ -291,7 +291,41 @@ a {
 
 .plan {
   grid-column: full-start / full-end;
-  background-color: brown; }
+  background-color: #dedede;
+  padding: 10rem 0;
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .plan__header {
+    grid-column: full-start / full-end; }
+  .plan__boxes {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2rem; }
+  .plan__box {
+    background-color: #fff;
+    padding: 1.5rem 1.5rem 3rem 1.5rem; }
+    .plan__box--header {
+      font-size: 2.5rem; }
+    .plan__box--num {
+      padding: 1rem 0;
+      color: #E67E22; }
+    .plan__box--price {
+      font-size: 5rem; }
+    .plan__box--month {
+      font-size: 2rem; }
+    .plan__box--paragraph {
+      font-size: 1.6rem; }
+    .plan__box--list {
+      padding: 3rem 0; }
+    .plan__box--item {
+      font-size: 2rem;
+      margin: 1.5rem 0; }
+      .plan__box--item i {
+        color: #E67E22;
+        margin-right: 1rem; }
+    .plan__box--btn {
+      text-align: center; }
 
 .footer {
   grid-column: full-start / full-end;
