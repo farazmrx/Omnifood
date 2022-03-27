@@ -287,7 +287,35 @@ a {
 
 .message {
   grid-column: full-start / full-end;
-  background-color: burlywood; }
+  background-color: #fff;
+  padding: 7rem 0;
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .message__header {
+    grid-column: full-start / full-end; }
+  .message__form {
+    grid-column: col-start 3 / col-end 10; }
+    .message__form--group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem; }
+      .message__form--group label {
+        font-size: 2rem; }
+      .message__form--group input,
+      .message__form--group select,
+      .message__form--group textarea {
+        width: 50%;
+        padding: 1rem; }
+        .message__form--group input::placeholder,
+        .message__form--group select::placeholder,
+        .message__form--group textarea::placeholder {
+          font-family: 'Lato';
+          font-size: 2rem; }
+    .message__form--btn {
+      text-align: center; }
+      .message__form--btn input {
+        cursor: pointer; }
 
 .plan {
   grid-column: full-start / full-end;
@@ -306,7 +334,9 @@ a {
     background-color: #fff;
     padding: 1.5rem 1.5rem 3rem 1.5rem; }
     .plan__box--header {
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      color: #8b8b8b; }
     .plan__box--num {
       padding: 1rem 0;
       color: #E67E22; }
