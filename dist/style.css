@@ -31,6 +31,9 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   text-rendering: optimizeLegibility; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 100%; } }
 
 body {
   background-color: #fff;
