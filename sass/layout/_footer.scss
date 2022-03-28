@@ -1,4 +1,52 @@
 .footer {
     grid-column: full-start / full-end;
-    background-color: tomato;
+    background-color: $color-gray-dark-3;
+    padding: 5rem 0;
+
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+
+    &__content {
+        grid-column: center-start / center-end;
+        color: $color-white;
+
+        display: grid;
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+    }
+
+    &__header {
+        grid-column: full-start / full-end;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--list {
+            display: flex;
+        }
+
+
+        &--link {
+            color: $color-white;
+            font-size: 1.6rem;
+            margin-right: 1rem;
+
+            &:hover {
+                color: $color-gray-light-1;
+            }
+        }
+    }
+
+    &__paragraph {
+        grid-column: center-start / center-end;
+        text-align: center;
+        font-size: 1.5rem;
+        color: $color-gray-light-1;
+    }
+
+    &__copyright {
+        grid-column: center-start / center-end;
+        text-align: center;
+        font-size: 1.5rem;
+        color: $color-gray-light-1;
+    }
 }

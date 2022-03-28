@@ -359,7 +359,38 @@ a {
 
 .footer {
   grid-column: full-start / full-end;
-  background-color: tomato; }
+  background-color: #333333;
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .footer__content {
+    grid-column: center-start / center-end;
+    color: #fff;
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .footer__header {
+    grid-column: full-start / full-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer__header--list {
+      display: flex; }
+    .footer__header--link {
+      color: #fff;
+      font-size: 1.6rem;
+      margin-right: 1rem; }
+      .footer__header--link:hover {
+        color: #8b8b8b; }
+  .footer__paragraph {
+    grid-column: center-start / center-end;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #8b8b8b; }
+  .footer__copyright {
+    grid-column: center-start / center-end;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #8b8b8b; }
 
 .header {
   grid-column: center-start / center-end;
