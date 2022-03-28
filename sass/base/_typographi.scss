@@ -8,6 +8,10 @@
         text-align: center;
         text-transform: uppercase;
 
+        @include respond(laptop) {
+            font-size: 3.5rem;
+        }
+
         &::after {
             content: "";
             position: absolute;
@@ -27,6 +31,10 @@
             padding-bottom: 15px;
             text-align: center;
             text-transform: uppercase;
+
+            @include respond(laptop) {
+                font-size: 3.5rem;
+            }
 
         &::after {
             content: "";

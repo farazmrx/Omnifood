@@ -8,6 +8,10 @@
 
     &__paragraph {
         font-size: 1.6rem;
+
+        @include respond(laptop) {
+            font-size: 1.3rem;
+        }
     }
 
     &__header {
@@ -20,6 +24,10 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-gap: 2rem;
+
+        @include respond(laptop) {
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        }
     }
 
     &__box {

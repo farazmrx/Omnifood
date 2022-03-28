@@ -7,6 +7,11 @@
     &__logo {
         width: 10rem;
         height: 10rem;
+
+        @include respond(laptop) {
+            width: 7rem;
+            height: 7rem;
+        }
     }
 
     display: flex;
@@ -29,6 +34,10 @@
         position: relative;
         padding-bottom: 5px;
         font-size: 2.4rem;
+
+        @include respond(laptop) {
+            font-size: 2rem;
+        }
 
         &::after {
             position: absolute;

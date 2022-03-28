@@ -27,5 +27,9 @@
         @include respond(Desktop) {
             font-size: 4rem;
         }
+
+        @include respond(laptop) {
+            font-size: 3.5rem;
+        }
     }
 }
