@@ -23,5 +23,9 @@
         text-transform: uppercase;
         font-size: 5rem;
         font-weight: 500;
+
+        @include respond(Desktop) {
+            font-size: 4rem;
+        }
     }
 }

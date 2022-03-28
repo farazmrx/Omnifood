@@ -306,6 +306,9 @@ a {
     text-transform: uppercase;
     font-size: 5rem;
     font-weight: 500; }
+    @media (max-width: 75em) {
+      .hero__heading {
+        font-size: 4rem; } }
 
 .message {
   grid-column: full-start / full-end;
