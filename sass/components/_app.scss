@@ -97,6 +97,10 @@
                 @include respond(phone) {
                     height: 60%;
                 }
+
+                @include respond(smallphone) {
+                    height: 30%;
+                }
             }
         }
     }

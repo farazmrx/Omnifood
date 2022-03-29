@@ -190,6 +190,9 @@ a {
       @media (max-width: 31.25em) {
         .app__main--download img {
           height: 60%; } }
+      @media (max-width: 25em) {
+        .app__main--download img {
+          height: 30%; } }
 
 .btn {
   font-size: 2rem;
@@ -270,6 +273,10 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 3rem;
     color: #fff; }
+    @media (max-width: 25em) {
+      .comments__boxes {
+        grid-gap: 0;
+        grid-row-gap: 7rem; } }
   .comments__box {
     display: flex;
     flex-direction: column;
@@ -389,6 +396,9 @@ a {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%); }
+    @media (max-width: 25em) {
+      .hero__content {
+        grid-column: center-start / full-end; } }
   .hero__heading {
     color: #fff;
     word-spacing: 10px;
@@ -466,6 +476,9 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2rem; }
+    @media (max-width: 25em) {
+      .plan__boxes {
+        grid-column: full-start / full-end; } }
   .plan__box {
     background-color: #fff;
     padding: 1.5rem 1.5rem 3rem 1.5rem; }
@@ -531,6 +544,9 @@ a {
     @media (max-width: 48em) {
       .footer__paragraph {
         font-size: 1.3rem; } }
+    @media (max-width: 25em) {
+      .footer__paragraph {
+        grid-column: full-start / full-end; } }
   .footer__copyright {
     grid-column: center-start / center-end;
     text-align: center;
@@ -539,6 +555,9 @@ a {
     @media (max-width: 31.25em) {
       .footer__copyright {
         grid-column: full-start / full-end; } }
+    @media (max-width: 25em) {
+      .footer__copyright {
+        font-size: 1.3rem; } }
 
 .header {
   grid-column: center-start / center-end;
@@ -561,6 +580,10 @@ a {
       .header__logo {
         width: 7rem;
         height: 7rem; } }
+    @media (max-width: 25em) {
+      .header__logo {
+        width: 5rem;
+        height: 5rem; } }
   .header__list {
     display: flex;
     justify-content: space-between; }
@@ -582,6 +605,9 @@ a {
     @media (max-width: 48em) {
       .header__link {
         font-size: 1.6rem; } }
+    @media (max-width: 25em) {
+      .header__link {
+        font-size: 1.2rem; } }
     .header__link::after {
       position: absolute;
       content: "";
