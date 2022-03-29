@@ -35,5 +35,10 @@
         @include respond(tablet) {
             font-size: 2.5rem;
         }
+
+        @include respond(phone) {
+            font-size: 2rem;
+            word-spacing: 1px;
+        }
     }
 }

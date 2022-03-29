@@ -20,6 +20,10 @@
 
     &__header {
         grid-column: col-start 2/ col-end 11;
+
+        @include respond(phone) {
+            grid-column: full-start / full-end;
+        }
     }
 
     &__boxes {
