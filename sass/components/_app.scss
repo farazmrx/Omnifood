@@ -8,8 +8,16 @@
         display: grid;
         grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
 
+        @include respond(tablet) {
+            grid-row-gap: 5rem;
+        }
+
         &--img {
             grid-column: col-start 3 / col-end 5;
+
+            @include respond(tablet) {
+                grid-column: col-start 3/ col-end 10;
+            }
 
             img {
                 width: 100%;
@@ -22,11 +30,20 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @include respond(tablet) {
+                grid-column: center-start / center-end;
+            }
+
         }
 
         &--group {
             display: flex;
             align-items: center;
+
+            @include respond(tablet) {
+                margin-bottom: 3rem;
+            }
         }
 
         &--number {
@@ -40,6 +57,11 @@
             @include respond(laptop) {
                 font-size: 2rem;
                 padding: 1.3rem;
+            }
+
+            @include respond(tablet) {
+                font-size: 3rem;
+                padding: 2rem;
             }
         }
 
@@ -57,6 +79,10 @@
 
                 @include respond(laptop) {
                     height: 70%;
+                }
+
+                @include respond(tablet) {
+                    height: 100%;
                 }
             }
         }

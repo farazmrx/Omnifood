@@ -13,6 +13,10 @@
     &__form {
         grid-column: col-start 3 / col-end 10;
 
+        @include respond(tablet) {
+            grid-column: center-start / center-end;
+        }
+
         &--group {
             display: flex;
             justify-content: space-between;
