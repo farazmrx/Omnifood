@@ -11,7 +11,7 @@
     }
 
     &__boxes {
-        grid-column: full-start / full-end;
+        grid-column: center-start / center-end;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-gap: 2rem;
@@ -22,6 +22,10 @@
 
         @include respond(phone) {
             font-size: 2.5rem;
+        }
+
+        @include respond(smallphone) {
+            grid-column: full-start / full-end;
         }
     }
 

@@ -227,7 +227,7 @@ a {
   .city__header {
     grid-column: center-start / center-end; }
   .city__boxes {
-    grid-column: full-start / full-end;
+    grid-column: center-start / center-end;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2rem; }
@@ -237,6 +237,9 @@ a {
     @media (max-width: 31.25em) {
       .city__boxes {
         font-size: 2.5rem; } }
+    @media (max-width: 25em) {
+      .city__boxes {
+        grid-column: full-start / full-end; } }
   .city__box--img {
     width: 100%; }
   .city__box--header {
