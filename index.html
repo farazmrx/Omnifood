@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="dist/style.css">
     <title>Omnifood</title>
@@ -44,7 +45,7 @@
                 <p class="features__paragraph">Hello, we’re farazfood, your new premium food delivery service. We know you’re always busy.No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
             </div><!-- features__header -->
 
-            <div class="features__boxes">
+            <div class="features__boxes js--wp-1">
                 <div class="features__box">
                     <i class="features__box--logo fa fa-calendar u-mb-medium"></i>
                     <h3 class="features__box--header u-mb-smaller">Up to 365 days/years</h3>
@@ -174,7 +175,7 @@
 
         <div class="app__main">
             <div class="app__main--img">
-                <img src="img/app-iPhone.png" alt="app-iPhone">
+                <img src="img/app-iPhone.png" alt="app-iPhone" class="js--wp-2">
             </div><!-- app__main--img -->
 
             <div class="app__main--content">
@@ -205,7 +206,7 @@
         <div class="city__header">
             <h2 class="heading--primery u-mb-medium">We're currently in these cities</h2>
         </div><!-- city__header -->
-        <div class="city__boxes">
+        <div class="city__boxes js--wp-3">
             <div class="city__box">
                 <img src="img/lisbon-3.jpg" alt="lisbon" class="city__box--img">
                 <h4 class="city__box--header">Lisbon</h4>
@@ -289,7 +290,7 @@
         </div><!-- plan__header -->
 
         <div class="plan__boxes">
-            <div class="plan__box">
+            <div class="plan__box js--wp-4">
                 <h3 class="plan__box--header">Premium</h3>
                 <p class="plan__box--num"><span class="plan__box--price">$399</span><span class="plan__box--month">/month</span></p>
                 <p class="plan__box--paragraph">That's only 13.30$ per meal</p>
@@ -406,8 +407,9 @@
             </div><!-- footer__copyright -->
         </div><!-- footer__content -->
     </footer>
-
-<script src="js/jquery-3.6.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+<script src="js/jquery.waypoints.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
