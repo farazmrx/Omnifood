@@ -494,7 +494,19 @@ a {
         grid-column: full-start / full-end; } }
   .plan__box {
     background-color: #fff;
-    padding: 1.5rem 1.5rem 3rem 1.5rem; }
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+    position: relative; }
+    .plan__box--important {
+      position: absolute;
+      top: 4rem;
+      right: -4rem;
+      padding: 1rem 5rem;
+      transform: rotate(45deg);
+      font-size: 1.6rem;
+      background-color: #4f2b91;
+      color: #fff;
+      font-weight: 500;
+      clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); }
     .plan__box--header {
       font-size: 2.5rem;
       text-transform: uppercase;
