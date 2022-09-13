@@ -6,9 +6,18 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul,li {
+    list-style: none;
+}
+
 body {
-    font-family: sans-serif;
-    color: $color-gray;
+    font-family: 'Rubik' ,sans-serif;
+    font-weight: 400;
+    color: $color-gray-dark-1;
 }
 
 html {
