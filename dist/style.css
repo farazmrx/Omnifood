@@ -19,6 +19,11 @@ body {
 html {
   font-size: 62.5%; }
 
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto; }
+
 .heading--primary {
   font-size: 5.2rem;
   line-height: 1.05;
@@ -66,6 +71,16 @@ html {
     .btn--secondary:link:hover, .btn--secondary:visited:hover {
       background-color: #fdf2e9;
       box-shadow: inset 0 0 0 3px #fff; }
+
+.grid {
+  display: grid;
+  gap: 9.6rem; }
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr); }
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr); }
+  .grid--4-cols {
+    grid-template-columns: repeat(4, 1fr); }
 
 .hero {
   background-color: #fdf2e9;
