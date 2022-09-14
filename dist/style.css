@@ -24,12 +24,30 @@ html {
   padding: 0 3.2rem;
   margin: 0 auto; }
 
-.heading--primary {
-  font-size: 5.2rem;
-  line-height: 1.05;
+.heading--primary, .heading--secondary, .heading--tertiary {
   color: #333;
   font-weight: 700;
   letter-spacing: -0.5px; }
+
+.heading--primary {
+  font-size: 5.2rem;
+  line-height: 1.05; }
+
+.heading--secondary {
+  font-size: 4.4rem; }
+
+.heading--tertiary {
+  font-size: 3rem;
+  line-height: 1.2; }
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: .75rem; }
 
 .u-mb-smaller {
   margin-bottom: 1rem !important; }
@@ -45,6 +63,9 @@ html {
 
 .u-mb-larger {
   margin-bottom: 6rem !important; }
+
+.u-mb-largest {
+  margin-bottom: 9.6rem !important; }
 
 .u-text-center {
   text-align: center !important; }
@@ -74,13 +95,16 @@ html {
 
 .grid {
   display: grid;
-  gap: 9.6rem; }
+  column-gap: 6.4rem;
+  row-gap: 9.6rem; }
   .grid--2-cols {
     grid-template-columns: repeat(2, 1fr); }
   .grid--3-cols {
     grid-template-columns: repeat(3, 1fr); }
   .grid--4-cols {
     grid-template-columns: repeat(4, 1fr); }
+  .grid--center-v {
+    align-items: center; }
 
 .hero {
   background-color: #fdf2e9;
@@ -119,6 +143,41 @@ html {
         border: 2px solid #fff; }
         .hero__delivered--imgs img:not(:last-child) {
           margin-right: -1.6rem; }
+
+.how {
+  padding: 9.6rem 0; }
+  .how__text--number {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 1.2rem; }
+  .how__text--description {
+    font-size: 1.8rem;
+    line-height: 1.8; }
+  .how__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+    .how__img::before, .how__img::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      z-index: -1; }
+    .how__img::before {
+      width: 60%;
+      padding-bottom: 60%;
+      background-color: #fdf2e9; }
+    .how__img::after {
+      width: 45%;
+      padding-bottom: 45%;
+      background-color: #fae5d3; }
+    .how__img img {
+      width: 35%; }
 
 .header {
   display: flex;

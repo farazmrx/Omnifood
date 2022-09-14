@@ -1,9 +1,33 @@
 .heading {
-    &--primary {
-        font-size: 5.2rem;
-        line-height: 1.05;
+    &--primary,
+    &--secondary,
+    &--tertiary {
         color: $color-gray-dark-2;
         font-weight: 700;
         letter-spacing: -0.5px;
     }
+
+    &--primary {
+        font-size: 5.2rem;
+        line-height: 1.05;
+    }
+
+    &--secondary {
+        font-size: 4.4rem;
+    }
+
+    &--tertiary {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+}
+
+.subheading {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $color-primary-dark-1;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: .75rem;
 }
