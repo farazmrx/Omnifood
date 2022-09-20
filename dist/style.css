@@ -112,7 +112,7 @@ html {
       color: #555; }
 
 .cta {
-  padding: 9.6rem 0; }
+  padding: 4.8rem 0 12.8rem 0; }
   .cta__container {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -209,6 +209,8 @@ html {
     grid-template-columns: repeat(3, 1fr); }
   .grid--4-cols {
     grid-template-columns: repeat(4, 1fr); }
+  .grid--5-cols {
+    grid-template-columns: repeat(5, 1fr); }
   .grid--center-v {
     align-items: center; }
   .grid:not(:last-child) {
@@ -459,6 +461,49 @@ html {
 .testimonial__name {
   font-size: 1.6rem;
   color: #6f6f6f; }
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #aaa; }
+  .footer__grid {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr; }
+  .footer__heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem; }
+  .footer__logo {
+    display: flex;
+    flex-direction: column; }
+    .footer__logo--link {
+      display: block;
+      margin-bottom: 3.2rem; }
+  .footer__social {
+    display: flex;
+    gap: 2.4rem; }
+    .footer__social--icon {
+      height: 2.4rem;
+      width: 2.4rem; }
+  .footer__copyright {
+    font-size: 1.4rem;
+    color: #767676;
+    line-height: 1.6;
+    margin-top: auto; }
+  .footer__address--contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6; }
+    .footer__address--contacts p:not(:last-child) {
+      margin-bottom: 2.4rem; }
+  .footer__nav--list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem; }
+  .footer__nav--link:link, .footer__nav--link:visited {
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all .4s; }
+  .footer__nav--link:hover, .footer__nav--link:active {
+    color: #333; }
 
 .header {
   display: flex;
