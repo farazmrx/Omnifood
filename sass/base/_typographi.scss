@@ -10,6 +10,10 @@
     &--primary {
         font-size: 5.2rem;
         line-height: 1.05;
+
+        @include respond(desktop) {
+            font-size: 4.4rem;   
+        }
     }
 
     &--secondary {

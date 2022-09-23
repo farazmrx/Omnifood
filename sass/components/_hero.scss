@@ -9,6 +9,10 @@
         padding: 0 3.2rem;
         align-items: center;
         gap: 9.6rem;
+
+        @include respond(desktop) {
+            max-width: 120rem;
+        }
     }
 
     &__img {

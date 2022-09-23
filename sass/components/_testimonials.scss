@@ -21,6 +21,10 @@
         gap: 1.6rem;
         padding: 1.6rem;
 
+        @include respond(desktop) {
+            grid-template-columns: repeat(2, 1fr);   
+        }
+
         &--item {
             overflow: hidden;
 
