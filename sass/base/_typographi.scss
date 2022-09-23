@@ -18,12 +18,20 @@
 
     &--secondary {
         font-size: 4.4rem;
+
+        @include respond(landtablet) {
+            font-size: 3.6rem;
+        }
     }
 
     &--tertiary {
         font-size: 3rem;
         line-height: 1.2;
         margin-bottom: 3.2rem;
+
+        @include respond(landtablet) {
+            font-size: 2.4rem;
+        }
     }
 }
 

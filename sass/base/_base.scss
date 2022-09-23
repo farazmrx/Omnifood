@@ -31,6 +31,10 @@ html {
     @include respond(big-desktop) {
         font-size: 100%;
     }
+
+    @include respond(landtablet) {
+        font-size: 56.25%;   
+    }
 }
 
 .container {
