@@ -23,6 +23,10 @@
             @include respond(tablet) {
                 height: 2.4rem;
             }
+
+            @include respond(phone) {
+                height: 1.2rem;
+            }
         }
     }
 }

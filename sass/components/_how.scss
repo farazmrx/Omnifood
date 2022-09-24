@@ -24,6 +24,22 @@
         justify-content: center;
         position: relative;
 
+        @include respond(phone) {
+            transform: translateY(2.4rem);   
+        }
+
+        &:nth-child(2) {
+            @include respond(phone) {
+                grid-row: 1;
+            }
+        }
+
+        &:nth-child(6) {
+            @include respond(phone) {
+                grid-row: 5;
+            }
+        }
+
         &::before,
         &::after {
             content: "";

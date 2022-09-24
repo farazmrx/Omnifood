@@ -11,6 +11,10 @@
     cursor: pointer;
     font-family: inherit;
 
+    @include respond(phone) {
+        padding: 2.4rem 1.6rem;       
+    }
+
     &--primary:link,
     &--primary:visited {
         background-color: $color-primary;

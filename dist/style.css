@@ -111,6 +111,9 @@ html {
   border: none;
   cursor: pointer;
   font-family: inherit; }
+  @media (max-width: 34em) {
+    .btn {
+      padding: 2.4rem 1.6rem; } }
   .btn--primary:link, .btn--primary:visited {
     background-color: #e67e22;
     color: #fff;
@@ -149,9 +152,15 @@ html {
     @media (max-width: 59em) {
       .cta__container {
         grid-template-columns: 3fr 2fr; } }
+    @media (max-width: 34em) {
+      .cta__container {
+        grid-template-columns: 1fr; } }
   .cta__content {
     padding: 4.8rem 6.4rem 6.4rem 6.4rem;
     color: #45260a; }
+    @media (max-width: 34em) {
+      .cta__content {
+        padding: 3.2rem; } }
     .cta__content h2 {
       color: #45260a;
       margin-bottom: 3.2rem; }
@@ -192,6 +201,10 @@ html {
     background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)), url(../img/eating.jpg);
     background-size: cover;
     background-position: center; }
+    @media (max-width: 34em) {
+      .cta__img {
+        height: 32rem;
+        grid-row: 1; } }
 
 .feature__icon {
   color: #e67e22;
@@ -233,6 +246,9 @@ html {
       @media (max-width: 59em) {
         .featured__logos img {
           height: 2.4rem; } }
+      @media (max-width: 34em) {
+        .featured__logos img {
+          height: 1.2rem; } }
 
 .grid {
   display: grid;
@@ -242,18 +258,30 @@ html {
     .grid {
       column-gap: 4.8rem;
       row-gap: 6.4rem; } }
+  @media (max-width: 34em) {
+    .grid {
+      row-gap: 4.8rem; } }
   .grid--2-cols {
     grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 34em) {
+      .grid--2-cols {
+        grid-template-columns: 1fr; } }
   .grid--3-cols {
     grid-template-columns: repeat(3, 1fr); }
     @media (max-width: 44em) {
       .grid--3-cols {
         grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 34em) {
+      .grid--3-cols {
+        grid-template-columns: 1fr; } }
   .grid--4-cols {
     grid-template-columns: repeat(4, 1fr); }
     @media (max-width: 44em) {
       .grid--4-cols {
         grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 34em) {
+      .grid--4-cols {
+        grid-template-columns: 1fr; } }
   .grid--5-cols {
     grid-template-columns: repeat(5, 1fr); }
   .grid--center-v {
@@ -264,6 +292,9 @@ html {
 .hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0; }
+  @media (max-width: 34em) {
+    .hero {
+      padding: 2.4rem 0 6.4rem 0; } }
   .hero__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -283,6 +314,9 @@ html {
         grid-template-columns: 1fr;
         padding: 0 8rem;
         gap: 6.4rem; } }
+    @media (max-width: 34em) {
+      .hero__content {
+        padding: 0 3.2rem; } }
   @media (max-width: 59em) {
     .hero__text {
       text-align: center; } }
@@ -291,6 +325,9 @@ html {
     @media (max-width: 59em) {
       .hero__img img {
         width: 60%; } }
+    @media (max-width: 34em) {
+      .hero__img img {
+        width: 80%; } }
   @media (max-width: 59em) {
     .hero__img {
       text-align: center; } }
@@ -341,6 +378,15 @@ html {
     align-items: center;
     justify-content: center;
     position: relative; }
+    @media (max-width: 34em) {
+      .how__img {
+        transform: translateY(2.4rem); } }
+    @media (max-width: 34em) {
+      .how__img:nth-child(2) {
+        grid-row: 1; } }
+    @media (max-width: 34em) {
+      .how__img:nth-child(6) {
+        grid-row: 5; } }
     .how__img::before, .how__img::after {
       content: "";
       display: block;
@@ -523,6 +569,9 @@ html {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 4.8rem;
     column-gap: 8rem; }
+    @media (max-width: 34em) {
+      .testimonials__content {
+        grid-template-columns: 1fr; } }
   .testimonials__gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -534,6 +583,10 @@ html {
     @media (max-width: 59em) {
       .testimonials__gallery {
         grid-template-columns: repeat(6, 1fr); } }
+    @media (max-width: 34em) {
+      .testimonials__gallery {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.2rem; } }
     .testimonials__gallery--item {
       overflow: hidden; }
       .testimonials__gallery--item img {
