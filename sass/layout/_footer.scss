@@ -4,6 +4,10 @@
 
     &__grid {
         grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+
+        @include respond(small-tablet) {
+            grid-template-columns: repeat(6, 1fr);   
+        }
     }
 
     &__heading {
@@ -15,6 +19,10 @@
     &__logo {
         display: flex;
         flex-direction: column;
+
+        @include respond(small-tablet) {
+            grid-column: span 3;   
+        }
 
 
         &--link {
@@ -41,6 +49,9 @@
     }
 
     &__address {
+        @include respond(small-tablet) {
+            grid-column: span 3;   
+        }
         &--contacts {
             font-style: normal;
             font-size: 1.6rem;
@@ -53,6 +64,12 @@
     }
 
     &__nav {
+        @include respond(small-tablet) {
+            grid-row: 1;   
+            grid-column: span 2;
+            margin-bottom: 3.2rem;
+        }
+
         &--list {
             display: flex;
             flex-direction: column;

@@ -79,6 +79,11 @@
     }
 
     &__diets {
+        @include respond(small-tablet) {
+            grid-column: 1 / -1;
+            justify-self: center;
+        }
+
         &--list {
             display: flex;
             flex-direction: column;

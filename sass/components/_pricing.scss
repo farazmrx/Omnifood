@@ -5,6 +5,10 @@
         border-radius: 11px;
         width: 75%;
 
+        @include respond(small-tablet) {
+            width: 100%;   
+        }
+
         &--starter {
             justify-self: end;
             border: 2px solid $color-primary-light-1;

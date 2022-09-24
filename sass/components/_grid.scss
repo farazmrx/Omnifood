@@ -14,10 +14,18 @@
 
     &--3-cols {
         grid-template-columns: repeat(3, 1fr);
+
+        @include respond(small-tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     &--4-cols {
         grid-template-columns: repeat(4, 1fr);
+
+        @include respond(small-tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     &--5-cols {

@@ -22,6 +22,10 @@
         @include respond(landtablet) {
             font-size: 3.6rem;
         }
+
+        @include respond(small-tablet) {
+            margin-bottom: 4.8rem;   
+        }
     }
 
     &--tertiary {
