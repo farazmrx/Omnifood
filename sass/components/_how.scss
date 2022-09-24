@@ -6,6 +6,10 @@
             font-weight: 600;
             color: #ddd;
             margin-bottom: 1.2rem;
+
+            @include respond(tablet) {
+                font-size: 7.4rem;
+            }
         }
 
         &--description {

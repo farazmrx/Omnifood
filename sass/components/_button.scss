@@ -41,6 +41,10 @@
         padding: 1.2rem;
         transition: all .4s;
 
+        @include respond(tablet) {
+            margin-top: 1.2rem;     
+        }
+
         &:hover {
             background-color: $color-white;
             color: $color-gray-dark-1;

@@ -3,6 +3,10 @@
     display: grid;
     grid-template-columns: 55fr 45fr;
     align-items: center;
+
+    @include respond(tablet) {
+        grid-template-columns: 1fr;         
+    }
     
     &__container {
         padding: 9.6rem;
@@ -27,6 +31,10 @@
 
         @include respond(desktop) {
             grid-template-columns: repeat(2, 1fr);   
+        }
+
+        @include respond(tablet) {
+            grid-template-columns: repeat(6, 1fr);     
         }
 
         &--item {

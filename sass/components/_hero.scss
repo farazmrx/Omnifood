@@ -17,11 +17,30 @@
         @include respond(landtablet) {
             gap: 4.8rem;
         }
+
+        @include respond(tablet) {
+            grid-template-columns: 1fr;
+            padding: 0 8rem;
+            gap: 6.4rem;
+        }
+    }
+
+    &__text {
+        @include respond(tablet) {
+            text-align: center;     
+        }
     }
 
     &__img {
         img {
             width: 100%;
+
+            @include respond(tablet) {
+                width: 60%;
+            }
+        }
+        @include respond(tablet) {
+            text-align: center;
         }
     }
 
@@ -36,6 +55,11 @@
         align-items: center;
         gap: 1.6rem;
         margin-top: 8rem;
+
+        @include respond(tablet) {
+            justify-content: center;
+            margin-top: 3.2rem;
+        }
 
         &--text {
             font-size: 1.8rem;

@@ -33,7 +33,11 @@ html {
     }
 
     @include respond(landtablet) {
-        font-size: 56.25%;   
+        font-size: 56.25%;
+    }
+
+    @include respond(tablet) {
+        font-size: 50%;  
     }
 }
 
