@@ -23,10 +23,12 @@ body {
     font-family: 'Rubik' ,sans-serif;
     font-weight: 400;
     color: $color-gray-dark-1;
+    overflow-x: hidden;
 }
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 
     @include respond(big-desktop) {
         font-size: 100%;
