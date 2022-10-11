@@ -62,7 +62,16 @@
             </div><!-- hero__text -->
     
             <div class="hero__img">
-                <img src="img/hero.png" alt="hero img">
+                <picture>
+                    <source srcset="img/hero.webp" type="image/webp" />
+                    <source srcset="img/hero-min.png" type="image/png" />
+      
+                    <img
+                      src="img/hero-min.png"
+                      class="hero-img"
+                      alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+                    />
+                  </picture>
             </div><!-- hero__img -->
         </div><!-- hero__content -->
     </section>
